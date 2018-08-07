@@ -1,6 +1,6 @@
-require_relative '../../lib/fuzzy_classname/finder'
+require_relative '../../lib/fuzzy_classnames/finder'
 
-RSpec.describe FuzzyClassname::Finder do
+RSpec.describe FuzzyClassnames::Finder do
   let(:filename) { 'data/classes.txt' }
   let(:finder) do
     -> (pattern) { described_class.new(pattern, filename) }

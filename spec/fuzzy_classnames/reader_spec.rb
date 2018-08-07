@@ -1,6 +1,6 @@
-require_relative '../../lib/fuzzy_classname/reader'
+require_relative '../../lib/fuzzy_classnames/reader'
 
-RSpec.describe FuzzyClassname::Reader do
+RSpec.describe FuzzyClassnames::Reader do
   let(:reader) { described_class.new(filename) }
 
   describe '#klasses' do

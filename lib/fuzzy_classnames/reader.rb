@@ -1,4 +1,4 @@
-module FuzzyClassname
+module FuzzyClassnames
   class Reader
     attr_reader :filename
 

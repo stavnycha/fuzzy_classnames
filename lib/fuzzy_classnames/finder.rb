@@ -1,7 +1,7 @@
 require_relative "../ext/string"
 require_relative "reader"
 
-module FuzzyClassname
+module FuzzyClassnames
   class Finder
     attr_reader :pattern, :filename
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require_relative "../lib/fuzzy_classname/finder"
+require_relative "../lib/fuzzy_classnames/finder"
 
-FuzzyClassname::Finder.new(ARGV[1], ARGV[0]).matches.each do |klass|
+FuzzyClassnames::Finder.new(ARGV[1], ARGV[0]).matches.each do |klass|
   puts klass
 end
