@@ -88,6 +88,7 @@ module FuzzyClassnames
       end
     end
 
+    # Ordered by importance
     def rules
       @rules ||= [
         Lexer::Whitespace.new,
