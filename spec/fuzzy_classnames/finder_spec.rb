@@ -35,4 +35,15 @@ RSpec.describe FuzzyClassnames::Finder do
       end
     end
   end
+
+  describe "#initialize" do
+
+    ["wRONG"].each do |pattern|
+      context "with invalid pattern argument <#{pattern}>" do
+        it "should raise an exception" do
+          expect { finder[pattern] }.to raise_exception(ArgumentError)
+        end
+      end
+    end
+  end
 end
