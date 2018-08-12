@@ -1,5 +1,5 @@
 module FuzzyClassnames
-  class Reader
+  class FileReader
     attr_reader :filename
 
     def initialize(filename)

@@ -1,12 +1,12 @@
-require_relative '../../lib/fuzzy_classnames/finder'
+require_relative "../../lib/fuzzy_classnames/finder"
 
 RSpec.describe FuzzyClassnames::Finder do
-  let(:filename) { 'data/classes.txt' }
+  let(:filename) { "data/classes.txt" }
   let(:finder) do
     -> (pattern) { described_class.new(pattern, filename) }
   end
 
-  describe '#matches' do
+  describe "#matches" do
     {
       "Foo":    ["c.d.FooBar", "a.b.FooBarBaz"],
       "FooB":   ["c.d.FooBar", "a.b.FooBarBaz"],
